@@ -1,16 +1,35 @@
 ## Hi there 👋
 
-<!--
-**xooseph/xooseph** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```json
+{
+    "me": {
+        "name": "xooseph",
+        "code": ["Java", "Python", "Javascript", "HTML", "CSS", "C#", "C++", "Rust"],
+        "technologies": {
+            "backend": {
+                "java": ["Spring"]
+            },
+            "frontend": {
+                "js": ["Vue", "Astro"]
+            },
+            "databases": ["PostgreSQL"],
+            "mobile": ["Android"]
+        },
+        "lowCodeTools": ["Canva", "Discord", "Joplin"],
+        "cloud": ["Azure"],
+        "areas": ["Cloud", "Electronics", "Management", "Videogames"],
+        "certifications": ["Azure AI-102", "Azure AZ-900"],
+        "contests": [
+            {
+                "name": "Ghost Wise - Innovation Challenge 1st edition",
+                "place": "Third"
+            },
+            {
+                "name": "Rhythm Practice - Innovacción Virtual 1st edition",
+                "place": "Second"
+            }
+        ]
+        "currentOccupation": ["Entrepreneur", "Freelancer"]
+    }
+}
+```
