@@ -18,6 +18,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Clone repo
+      uses: actions/checkout@v5
+      
     - name: Generate snake graphs with contributions
       uses: Platane/snk/svg-only@v3.3.0
       with:
