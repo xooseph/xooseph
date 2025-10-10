@@ -35,7 +35,7 @@ jobs:
         #  - color_dots:  Coma separated list of dots color.
         #                 The first one is 0 contribution, then it goes from the low contribution to the highest.
         #                 Exactly 5 colors are expected.
-        output:
+        outputs:
           dist/github-snake.svg?color_snake=redwood&color_dots=#CBC3B5,#F5ECDD,#F5E1C0,#FFD797,#F5BA5C
           
     - name: Push new generated snake graphs to the output branch
