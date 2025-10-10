@@ -2,7 +2,8 @@ name: Update README.md
 
 on:
   schedule:
-  - cron: "*/2 * * * *"
+  # Every day at 6 am UTC (00:00 MX)
+  - cron: "0 6 * * *"
 
 # This command allows us to run the Action automatically from the Actions tab.
   workflow_dispatch:
