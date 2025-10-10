@@ -1,0 +1,44 @@
+name: Update README.md
+
+on:
+  schedule:
+  - cron: "*/2 * * * *"
+
+# This command allows us to run the Action automatically from the Actions tab.
+  workflow_dispatch:
+  
+  # Also run on every push on the main branch
+  push:
+    branches:
+    - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Generate snake graphs with contributions
+      uses: Platane/snk/svg-only@v3.3.0
+      with:
+        github_user_name: ${{ github.repository_owner }}
+
+        # list of files to generate.
+        # one file per line. Each output can be customized with options as query string.
+        #
+        #  supported options:
+        #  - palette:     A preset of color, one of [github, github-dark, github-light]
+        #  - color_snake: Color of the snake
+        #  - color_dots:  Coma separated list of dots color.
+        #                 The first one is 0 contribution, then it goes from the low contribution to the highest.
+        #                 Exactly 5 colors are expected.
+        output:
+          dist/github-snake.svg?color_snake=redwood&color_dots=#CBC3B5,#F5ECDD,#F5E1C0,#FFD797,#F5BA5C
+          
+    - name: Push new generated snake graphs to the output branch
+      uses: crazy-max/ghaction-github-pages@v4.2.0
+      with:
+        target_branch: output
+        build_dir: dist
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
