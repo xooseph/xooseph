@@ -3,6 +3,7 @@
 <div align="center">
     <p><b>Software Developer | Backend Developer | Java / Spring Boot / Cloud </b></p>
     <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExamV6dzF1NTM5bXVoenBpYnl5dXU0aGp2eWllZjRlMXRkMGdudjF1ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Dh5q0sShxgp13DwrvG/giphy.gif" width="200" alt="I have no idea what I'm doing gif" />
+    <img src="https://raw.githubusercontent.com/xooseph/xooseph/output/github-snake.svg" alt="github-snake" />
 </div>
 
 <h3>📊 Analytics </h3>
