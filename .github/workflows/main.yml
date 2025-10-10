@@ -36,8 +36,9 @@ jobs:
         #  - color_dots:  Coma separated list of dots color.
         #                 The first one is 0 contribution, then it goes from the low contribution to the highest.
         #                 Exactly 5 colors are expected.
-        outputs:
-          dist/github-snake.svg?color_snake=redwood&color_dots=#CBC3B5,#F5ECDD,#F5E1C0,#FFD797,#F5BA5C
+        outputs: |
+          dist/github-snake.svg?color_snake=red&color_dots=#EBEDF0,#E6CCB2,#DDB892,#B08968,#7F5539
+          dist/github-snake-dark.svg?color_snake=red&color_dots=#161B22,#312601,#453903,#6D4F0F,#C68100
           
     - name: Push new generated snake graphs to the output branch
       uses: crazy-max/ghaction-github-pages@v4.2.0
